@@ -24,9 +24,8 @@ html {
 
 body {
     background: radial-gradient(circle, #e5e5e598 10%, transparent 11%);
-        background-size: 3em 3em;
-        background-color: #ffffff;
-        opacity: 1
+    background-size: 3em 3em;
+    background-color: #ffffff;
 }
 
 section {
@@ -59,7 +58,9 @@ section {
     border-radius: 5px;
 }
 
-.container {
+/* Pagina inicial */
+
+.home-container {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -118,3 +119,65 @@ section {
     transform: scaleX(-1);
     cursor: pointer;
 }
+
+/* Como jogar */
+
+.howto-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+.title-and-description {
+    margin-bottom: 30px;
+}
+
+.title-and-description h1 {
+    font-size: 6rem;
+}
+
+.title-and-description p {
+    font-size: 1.5rem;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 2rem;
+    background: rgb(235,111,85);
+    background: linear-gradient(180deg, rgb(247, 148, 128) 72%, rgb(214, 135, 101) 100%, rgba(128,78,57,1) 100%);
+}
+
+.video-side {
+    width: 100%;
+    padding: 1rem;
+}
+
+.download-area {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 1rem;
+    color: rgb(0, 0, 0);
+}
+
+.download-area a {
+    color: white;
+    background-color: #eb5555;
+    padding: 1rem;
+    width: fit-content;
+    border-radius: 10px;
+}
+
+
+
+
+/* Regras */
