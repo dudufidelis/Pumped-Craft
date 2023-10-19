@@ -172,7 +172,6 @@ section {
 }
 
 .box {
-    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -199,6 +198,7 @@ section {
 
 iframe {
     border-radius: 5px;
+    border: 2px solid #fff;
 }
 
 .box ul {
@@ -214,6 +214,32 @@ iframe {
 .w-fit {
     width: fit-content;
     padding: 2rem;
+}
+
+.img {
+    padding: 1rem;
+}
+
+.footer {
+    width: 100%;
+    background-color: var(--brown);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.creators {
+    padding: 1rem;
+    text-align: justify;
+}
+
+.muddy-pig-2 {
+    width: 180px;
+}
+
+.muddy-pig-4 {
+    max-width: 250px
 }
 
 
