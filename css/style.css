@@ -1,13 +1,8 @@
-@keyframes changeColor {
-    0%, 100% { color: red;}
-    33% { color: green;}
-    66% { color: blue;}
-  }
-  
-  .rgb {
-    animation: changeColor 6s linear infinite;
-  }
-  
+:root {
+    --brown: #50342b;
+    --pink-50: #EE917B;
+    --pink-100: #EB6F55;
+}
 
 * {
     box-sizing: border-box;
@@ -33,7 +28,7 @@
   }
   
 ::-webkit-scrollbar-thumb {
-    background-color: #EB6F55;
+    background-color: var(--pink-50);
     border-radius: 10px;
   }
   
@@ -48,7 +43,7 @@ html {
 body {
     background: radial-gradient(circle, #e5e5e598 10%, transparent 11%);
     background-size: 3em 3em;
-    background-color: #ffffff;
+    background-color: #fff;
 }
 
 section {
@@ -90,11 +85,15 @@ section {
     gap: 115px;
 }
 
+.pink {
+    color: var(--pink-50);
+}
+
 .text-side {
     width: fit-content;
     height: fit-content;
     display: flex;
-    margin-top: 200px;
+    margin-top: 220px;
     flex-direction: column;
     align-items: center;
 }
@@ -102,6 +101,11 @@ section {
 .text {
     font-size: 3.8rem;
     text-align: center;
+    line-height: 1;
+}
+
+.text h4 {
+    font-weight: lighter;
 }
 
 .links {
@@ -109,8 +113,8 @@ section {
     display: flex;
 }
 
-.links a {
-    background-color: #EB6F55;
+.btn a {
+    background-color: var(--pink-100);
     border-radius: 5px;
     width: 150px;
     padding: .7rem;
@@ -123,7 +127,7 @@ section {
     transition: 500ms;
 }
 
-.links a:hover {
+.btn a:hover {
     transform: scale(1.05);
 }
 
@@ -168,45 +172,29 @@ section {
 }
 
 .box {
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid rgba(0, 0, 0, 0.288);
     border-radius: 10px;
     padding: 2rem;
-    background: #ffffff;
+    background: var(--brown);
+    color: #fff;
 }
 
 .video-side {
-    width: 100%;
-    padding: 1rem;
     text-align: center;
+    padding: 1rem;
 }
 
 .download-area {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    padding: 1rem;
-    color: rgb(0, 0, 0);
     text-align: center;
-}
-
-.download-area a {
-    color: #fff;
-    width: fit-content;
-    background-color: #EB6F55;
-    border-radius: 5px;
-    width: 150px;
-    padding: .7rem;
-    transition: 500ms;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.267);
-}
-
-.download-area a:hover {
-    transform: scale(1.05);
+    padding: 1rem;
 }
 
 iframe {
@@ -221,6 +209,11 @@ iframe {
     font-size: 8rem;
     color: black;
     animation: moveUpDown 2s infinite ; 
+}
+
+.w-fit {
+    width: fit-content;
+    padding: 2rem;
 }
 
 
