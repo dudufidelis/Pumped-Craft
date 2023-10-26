@@ -178,9 +178,10 @@ section {
     align-items: center;
     border: 1px solid rgba(0, 0, 0, 0.288);
     border-radius: 10px;
-    padding: 2rem;
+    padding: 2rem 5rem;
     background: var(--brown);
     color: #fff;
+    gap: 4rem;
 }
 
 .video-side {
@@ -212,6 +213,7 @@ section {
     text-align: left;
     margin-bottom: 3rem;
     margin-left: 2rem;
+    padding: 1rem;
 }
 
 .require-list li {
@@ -230,9 +232,6 @@ iframe {
     height: 315px;
 }
 
-.box ul {
-    padding: 1rem;
-}
 
 .arrow a {
     font-size: 8rem;
