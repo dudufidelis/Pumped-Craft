@@ -46,116 +46,79 @@ body {
     background-color: #fff;
 }
 
-section {
-    height: 100vh;
-    width: 100%;
-}
+/*Components*/
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    height: 3rem;
-    width: 100%;
-}
-
-.header a:nth-child(1) {
-    font-size: 1.5rem;
-    font-weight: bolder;
-    color: rgba(0, 0, 0, 0.719);
-}
-
-.header a:nth-child(2) {
+.btn {
     color: #fff;
-    background-color: rgb(24, 95, 248);
-    padding: 0.5rem;
-    width: 80px;
-    text-align: center;
-    border-radius: 5px;
+    background-color: var(--pink-50);
+    padding: .5rem 1rem;
+    border-radius: .2rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    transition: all 200ms ease-in-out;
+}
+
+.btn:hover {
+    background-color: var(--pink-100);
+}
+
+/*Header*/
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    background-color: var(--brown);
+    width: fit-content;
+    border-radius: 1rem;
+    box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+header nav {
+    display: flex;
+    gap: 2.5rem;
+    padding: 1rem 2rem;
+}
+
+header nav a{
+    color: #fff;
+    font-size: 1.2rem;
+    transition: all 200ms ease-in-out;
+}
+
+header nav a:hover {
+    color: var(--pink-100);
 }
 
 /* Pagina inicial */
 
-.home-container {
+main {
     display: flex;
     justify-content: center;
-    width: 100%;
-    height: 100vh;
-    gap: 115px;
+    gap: 3rem;
+    margin-top: 4rem;
 }
 
-.pink {
-    color: var(--pink-50);
+main img:first-child {
+    max-width: 480px;
 }
 
-.text-side {
-    width: fit-content;
-    height: fit-content;
-    display: flex;
-    margin-top: 220px;
-    flex-direction: column;
-    align-items: center;
-}
-
-.text {
-    font-size: 3.8rem;
-    text-align: center;
-    line-height: 1;
-}
-
-.text h4 {
-    font-weight: lighter;
-}
-
-.links {
-    margin-top: 50px;
-    display: flex;
-}
-
-.btn a {
-    background-color: var(--pink-100);
-    border-radius: 5px;
-    width: 150px;
-    padding: .7rem;
-    text-align: center;
-    margin-inline: 18px;
-    font-size: 1.2rem;
-    font-weight: bolder;
-    color: #fff;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.267);
-    transition: 500ms;
-}
-
-.btn a:hover {
-    transform: scale(1.05);
-}
-
-
-.image-side {
-    width: fit-content;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    margin-top: 90px;
-}
-
-.image-side img {
+main img:nth-child(2) {
     max-width: 400px;
     transform: scaleX(-1);
-    cursor: pointer;
 }
+
+/*Como jogar*/
 
 .howto-container, .rules-container {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 100%;
-    height: 100vh;
+    margin-top: 4rem;
 }
 
 .rules-container {
     padding: 2rem;
+    margin-bottom: 4rem;
 }
 
 .title-and-description {
@@ -169,6 +132,7 @@ section {
 
 .title-and-description p {
     font-size: 1.5rem;
+    line-height: 1.8rem;
 }
 
 .box {
@@ -248,28 +212,16 @@ iframe {
     padding: 1rem;
 }
 
-.footer {
-    width: 100%;
-    background-color: var(--brown);
-    color: #fff;
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.creators {
     padding: 1rem;
-    text-align: justify;
+    background-color: #50342b;
+    width: 100%;
+    font-size: 1.2rem;
+    color: #fff;
 }
-
-.muddy-pig-2 {
-    width: 180px;
-}
-
-.muddy-pig-4 {
-    max-width: 250px
-}
-
 
 @media screen and (max-width: 1000px) {
     .home-container {
