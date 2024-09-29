@@ -46,6 +46,12 @@ body {
     background-color: #fff;
 }
 
+/* TEMP */
+
+.warning {
+    display: none;
+}
+
 /*Components*/
 
 .btn {
@@ -242,6 +248,32 @@ footer {
 
     .text-side {
         margin-top: 0;
+    }
+}
+
+
+@media screen and (max-width: 940px) {
+    section {
+        display: none;
+    }
+
+    header {
+        display: none;
+    }
+
+    main {
+        display: none;
+    }
+
+    .warning {
+        margin-top: 3rem;
+        display: block;
+        line-height: 1.8rem;
+        text-align: center;
+    }
+
+    .warning h1 {
+        margin-bottom: 1rem;
     }
 }
 
